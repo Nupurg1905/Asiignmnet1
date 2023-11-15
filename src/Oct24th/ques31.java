@@ -8,23 +8,20 @@ public class ques31 {
 
         System.out.print("Enter a non-negative integer: ");
         int n = scanner.nextInt();
+        int factorial = 1;
+        int i = 1;
+        scanner.close();
 
-        if (n < 0) {
-            System.out.println("Factorial is not defined for negative numbers.");
-        } else {
-            int factorial = 1;
-            int i = 1;
-
-            while (i <= n) {
-                factorial *= i;
+        while (i <= n) {
+                factorial = factorial * i;
                 i++;
             }
 
             System.out.println("The factorial of " + n + " is: " + factorial);
         }
 
-        scanner.close();
+        
 
 	}
 
-}
+

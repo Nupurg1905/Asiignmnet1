@@ -9,7 +9,7 @@ public class ques27 {
         System.out.print("Enter the month (1-12): ");
         int month = scanner.nextInt();
 
-        int daysInMonth = 0;
+        int days;
 
         switch (month) {
             case 1:  // January
@@ -19,16 +19,16 @@ public class ques27 {
             case 8:  // August
             case 10: // October
             case 12: // December
-                daysInMonth = 31;
+                days = 31;
                 break;
             case 4:  // April
             case 6:  // June
             case 9:  // September
             case 11: // November
-                daysInMonth = 30;
+                days = 30;
                 break;
             case 2:  // February
-                daysInMonth = 28;
+                days = 28;
                 break;
             default:
                 System.out.println("Invalid month.");
@@ -36,7 +36,7 @@ public class ques27 {
                 return;
         }
 
-        System.out.println("There are " + daysInMonth + " days in the selected month.");
+        System.out.println("There are " + days + " days in the selected month.");
 
         scanner.close();
 

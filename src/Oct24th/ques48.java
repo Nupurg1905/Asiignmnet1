@@ -3,23 +3,23 @@ public class ques48 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] numbers = { 5, 10, 15, 20, 25 };
+		int[] nums = { 5, 10, 15, 20, 25 };
 
-        int targetValue = 15;
+        int checkValue = 15;
 
-        boolean found = false;
+        boolean isthere = false;
 
-        for (int number : numbers) {
-            if (number == targetValue) {
-                found = true;
+        for (int n : nums) {
+            if (n == checkValue) {
+                isthere = true;
                 break; 
             }
         }
 
-        if (found) {
-            System.out.println("The array contains the value " + targetValue);
+        if (isthere) {
+            System.out.println("Yes it contains " + checkValue);
         } else {
-            System.out.println("The array does not contain the value " + targetValue);
+            System.out.println("No it is not contain " + checkValue);
 
 	}
 

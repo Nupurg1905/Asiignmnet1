@@ -16,6 +16,7 @@ public class ques17 {
         double num3 = input.nextDouble();
 
         double largest;
+        input.close();
 
         if (num1 >= num2) {
             if (num1 >= num3) {

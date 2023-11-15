@@ -8,24 +8,20 @@ public class ques30 {
 
         System.out.print("Enter a positive integer (N): ");
         int N = scanner.nextInt();
+        int sum = 0;
+        int i = 1;
+        scanner.close();
 
-        if (N < 1) {
-            System.out.println("Please enter a positive integer.");
-        } else {
-            int sum = 0;
-            int i = 1;
-
-            while (i <= N) {
-                sum += i;
+        while (i <= N) {
+                sum = sum + i;
                 i++;
             }
 
             System.out.println("The sum of natural numbers from 1 to " + N + " is: " + sum);
         }
 
-        scanner.close();
+        
 
 
-	}
-
+	
 }

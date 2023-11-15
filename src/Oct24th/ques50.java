@@ -1,28 +1,22 @@
 package Oct24th;
-import java.util.Scanner;
+import java.util.Arrays;
 public class ques50 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] numbers = { 5, 10, 15, 20, 25 };
+		int[] array = {1, 2, 3, 4, 5};
+		System.out.println("original Array :" + Arrays.toString(array));
+        
+		int Remove = 3;//give position of array which you want to remove
 
-        int targetValue = 15;
-
-        int[] newArray = new int[numbers.length - 1];
-        int newIndex = 0;
-
-        for (int i = 0; i < numbers.length; i++) {
-            if (numbers[i] != targetValue) {
-                newArray[newIndex] = numbers[i];
-                newIndex++;
+        for(int i = Remove; i < array.length-1; i++) {
+        	array[i] = array[i+1];
+                
             }
+        System.out.println("Array after removing " + Remove + ": " + Arrays.toString(array));
+
         }
 
-        System.out.println("Original array: " + Array.toString(numbers));
-        System.out.println("Value " + targetValue + " removed from the array.");
-        System.out.println("New array: " + Arrays.toString(newArray));
-
-	}
+        
 
 }
-/////

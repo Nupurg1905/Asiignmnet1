@@ -12,7 +12,7 @@ public class ques35 {
         System.out.print("Enter the exponent: ");
         int exponent = scanner.nextInt();
 
-        double result = 1.0;
+        int result = 1;
         int i = 0;
 
         while (i < exponent) {

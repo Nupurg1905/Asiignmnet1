@@ -7,32 +7,29 @@ public class ques24 {
 		Scanner input = new Scanner(System.in);
 
         System.out.print("Enter a number: ");
-        int number = input.nextInt();
+        int num = input.nextInt();
 
-        if (number % 2 == 0) {
+        if (num % 2 == 0) {
             System.out.println("The number is even.");
         } else {
             System.out.println("The number is odd.");
         }
-
-        if (isPrime(number)) {
-            System.out.println("The number is prime.");
-        } else {
-            System.out.println("The number is not prime.");
+        int counter = 0;
+        for(int i= 1; i <=num; i++) {
+        	if(num% i== 0) {
+        		counter++;
+        	}
         }
+        if(counter ==2) {
+        	System.out.println("Prime");
+        }else {
+        	System.out.println("Not Prime");
+        }
+
+        
+        input.close();
     }
 
-    public static boolean isPrime(int number) {
-        if (number <= 1) {
-            return false;
-        }
-        for (int i = 2; i * i <= number; i++) {
-            if (number % i == 0) {
-                return false;
-            }
-        }
-        return true;
 
 	}
 
-}

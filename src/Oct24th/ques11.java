@@ -26,8 +26,10 @@ public class ques11 {
         }
 
         System.out.println("The largest number is: " + largest);
+        input.close();
 
 
 	}
+	
 
 }

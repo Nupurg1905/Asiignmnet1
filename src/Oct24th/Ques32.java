@@ -1,4 +1,4 @@
-package Oct24th;
+	package Oct24th;
 import java.util.Scanner;
 public class Ques32 {
 

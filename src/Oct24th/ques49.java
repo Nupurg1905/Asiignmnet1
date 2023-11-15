@@ -4,23 +4,23 @@ public class ques49 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] numbers = { 5, 10, 15, 20, 25 };
+		int[] nums = { 5, 10, 15, 20, 25 };
 
-        int targetValue = 15;
+        int checkValue = 15;
 
         int index = -1; 
 
-        for (int i = 0; i < numbers.length; i++) {
-            if (numbers[i] == targetValue) {
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == checkValue) {
                 index = i;
                 break; 
             }
         }
 
         if (index != -1) {
-            System.out.println("The index of " + targetValue + " is: " + index);
+            System.out.println("The index of " + checkValue + " is: " + index);
         } else {
-            System.out.println(targetValue + " was not found in the array.");
+            System.out.println(checkValue + " was not found in the array.");
 
 
 	}

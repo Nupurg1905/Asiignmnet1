@@ -11,9 +11,14 @@ public class ques19 {
 
         if (number > 0 && number % 2 == 0) {
             System.out.println("The number is both even and positive.");
-        } else {
+        }
+        else if (number % 2!=0 && number>0){
+        	System.out.println("The number is not even but positive.");
+        	}
+        else {
             System.out.println("The number is not both even and positive.");
 
 	}
+        kb.close();
 	}
 }

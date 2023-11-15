@@ -7,39 +7,38 @@ public class ques23 {
 		Scanner input = new Scanner(System.in);
 
         System.out.print("Enter a number (1-7): ");
-        int dayNumber = input.nextInt();
+        int Number = input.nextInt();
+        input.close();
 
-        String day;
 
-        switch (dayNumber) {
+        switch (Number) {
             case 1:
-                day = "Monday";
+                System.out.print("Monday");
                 break;
             case 2:
-                day = "Tuesday";
+            	System.out.print("Tuesday");
                 break;
             case 3:
-                day = "Wednesday";
+            	System.out.print("Wednesday");
                 break;
             case 4:
-                day = "Thursday";
+            	System.out.print("Thursday");
                 break;
             case 5:
-                day = "Friday";
+            	System.out.print("Friday");
                 break;
             case 6:
-                day = "Saturday";
+            	System.out.print("Saturday");
                 break;
             case 7:
-                day = "Sunday";
+            	System.out.print("Sunday");
                 break;
             default:
-                day = "Invalid day number. Please enter a number between 1 and 7.";
+            	System.out.print("Noday");
         }
 
-        System.out.println("The day of the week is: " + day);
-
-
+        
 	}
+	
 
 }
